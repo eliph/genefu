@@ -204,7 +204,7 @@ function (sbt.model=c("scmgene", "scmod1", "scmod2", "pam50", "ssp2006", "ssp200
     }))
     
     sbts$subtype.proba<-nproba
-
+    sbts$subtype.ncor<-ncor
     ## compute crisp classification - in this case, really based on the binary call from the CL classifier
     #     sbts$subtype.crisp <- t(
     #       apply(sbts$subtype.proba, 1, function (x) {
